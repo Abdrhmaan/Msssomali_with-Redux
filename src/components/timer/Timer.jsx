@@ -1,42 +1,33 @@
 import React from 'react'
 import styles from "./timer.module.scss"
+import Countdown from 'react-countdown';
+import Time from './Time';
 
 const Timer = () => {
-  return (
-    <div className={styles.countdown}>
-        <h1>Voting Ends iN</h1>
-        <div className={styles.time}>
-            <div className={styles.digit_txet}>
-                <span className={styles.digit}>08</span>
-                <span className={styles.text}>days</span>
-                
-            </div>
-       
 
-   
-            <div className={styles.digit_txet}>
-                <span className={styles.digit}>08</span>
-                <span className={styles.text}>hours</span>
-                
-            </div>
-   
-            <div className={styles.digit_txet}>
-                <span className={styles.digit}>08</span>
-                <span className={styles.text}>minutes</span>
-                
-            </div>
-     
-            <div className={styles.digit_txet}>
-                <span className={styles.digit}>08</span>
-                <span className={styles.text}>second</span>
-                
-            </div>
+
+
+    const Completion = () => <span>You are good to go!</span>;
+
+
+
+    const renderer = ({ days, hours, minutes, seconds, completed }) => {
+		if (completed) {
+			// Render a completed state
+
+			return <Completion />;
+		} else {
+			// Render a countdown
+			return (
+				<Time days={days} hours={hours} minutes={minutes} seconds={seconds} />
+			);
+		}
+	};
+  return (
+    <div>
+  <Countdown date={Date.now() + 6739200000} renderer={renderer} />,
   
-       </div>
-        
-        
-        
-        </div>
+  </div>
   )
 }
 

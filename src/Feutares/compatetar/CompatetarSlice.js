@@ -25,7 +25,7 @@ const CompatetarSlice = createSlice({
         addvotedtocompatetar  : (state , action) =>{
 
             let compIndex = state.competitors.findIndex((value) => value.Id == action.payload);
-            state.competitors[compIndex].NumberofVotes = Number(state.competitors[compIndex].NumberofVotes) + Number(state.voteCount);
+            state.competitors[compIndex].NumberofVotes =   Number(state.competitors[compIndex].NumberofVotes) + Number(state.voteCount);
          
          
         },
