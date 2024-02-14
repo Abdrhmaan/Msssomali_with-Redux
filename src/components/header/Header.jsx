@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
         <ul>
-            <li><a href='#'>MSS SOMALI</a></li>
+            <li className={styles.logo}><a href='#'>MSS SOMALI</a></li>
             <li><a href='#'>COMPATETITARS</a></li>
         </ul>
         </div>

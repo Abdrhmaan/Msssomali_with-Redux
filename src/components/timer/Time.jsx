@@ -7,6 +7,7 @@ const Time = ({days,hours,minutes,seconds}) => {
     <div className={styles.countdown}>
     <h1>Voting Ends iN</h1>
     <div className={styles.time}>
+        
         <div className={styles.digit_txet}>
             <span className={styles.digit}>{days}</span>
             <span className={styles.text}>days</span>

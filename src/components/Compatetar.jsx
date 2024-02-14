@@ -10,7 +10,7 @@ import { setCurrentCompetitor } from '../Feutares/compatetar/CompatetarSlice';
 const Compatetar = ({compatr}) => {
 
 	
-
+	const dispach  = useDispatch()
 
 	function vornow() {
 		dispach(handlmodal())
@@ -18,7 +18,7 @@ const Compatetar = ({compatr}) => {
 		console.log(compatr)
 		
 	}
-	const dispach  = useDispatch()
+
 	
 	
     const backgroundStyle = {
@@ -30,7 +30,9 @@ const Compatetar = ({compatr}) => {
 	};
  
     return (
+
 		<div className={styles.competitor} style={backgroundStyle}>
+
 			<div className={styles.info}>
 				<span className={styles.name}>
 					{compatr.FirstName + " " + compatr.LastName}
@@ -42,10 +44,9 @@ const Compatetar = ({compatr}) => {
 				</span>
 			</div>
 
+
 			<div className={styles.vote} >
 			<AiTwotoneUsb onClick={vornow} />
-
-
 			</div>
 
 			{/* <img src={competitor.Photo} alt={competitor.FirstName} /> */}

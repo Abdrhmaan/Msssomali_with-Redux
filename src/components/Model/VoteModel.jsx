@@ -63,7 +63,7 @@ const VoteModel = () => {
         
         <div>
             
-         /// <button onClick={()=> dispach(handlmodal())}>Open Modal</button>
+     <button onClick={()=> dispach(handlmodal())}>Open Modal</button>
 
 
 
@@ -83,6 +83,7 @@ const VoteModel = () => {
 					className={styles.modal}
 					overlayClassName={styles.overlay}>
 					<div className={styles.modal_container}>
+
 						<div className={styles.competitor_info}>
 
 
@@ -92,7 +93,7 @@ const VoteModel = () => {
                         <div style={backgroundStyle}></div>
 							<div className={styles.bio}>
 								<div className={styles.divider}>
-									//<label>name</label>
+									<label>name</label>
 									<span>
 									<span>
 										{currentCompetitor.FirstName +

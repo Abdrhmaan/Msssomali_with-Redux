@@ -11,6 +11,8 @@ const Compatetors = () => {
 	)
 	console.log(competitors)
   return (
+
+    
     <div className={styles.container}>
         <div className={styles.Compatetors_header}>
             <span>Mss somali</span>
